@@ -6,7 +6,9 @@ from telegram.ext import Updater, CommandHandler, CallbackContext
 from datetime import datetime, timedelta
 
 # ================== إعداد البوت ==================
-TOKEN = "8693180386:AAFH_gjjxXSXxDemM1nRgUc-9VFEfhSLZko"
+import os
+
+TOKEN = os.environ.get("TOKEN")
 
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
